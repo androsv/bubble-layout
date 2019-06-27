@@ -1,0 +1,124 @@
+.App {
+  position: relative;
+}
+.container {
+  width: 80%;
+  margin: 5rem auto;
+  position: absolute;
+}
+
+.main-bubble {
+  position: absolute;
+  display: inline-block;
+  font-size: 2rem;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  text-align: center;
+  top: 15vh;
+  left: 85vh;
+  cursor: pointer;
+  background-color: aquamarine;
+  transition: all 0.5s ease;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  &:focus {
+    outline: 0;
+  }
+  p {
+    margin-top: 6rem;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.side-bubble {
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 1px solid #eee;
+  text-align: center;
+  background-color: #eee;
+  transition: all 0.5s ease;
+  user-select: none;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+  &-2 {
+    top: 29vh;
+    left: 69vh;
+  }
+  &-3 {
+    top: 44vh;
+    left: 73vh;
+  }
+  &-4 {
+    top: 14vh;
+    left: 72vh;
+  }
+  &-5 {
+    top: 41vh;
+    left: 58vh;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+// .do-blue {
+//   background-color: cornflowerblue;
+// }
+
+// .animate-shrink {
+//   animation: animate-shrink 1s ease;
+//   animation-timing-function: ease-in-out;
+// }
+
+// .animate-grow {
+//   animation: animate-grow 1s ease;
+//   animation-timing-function: ease-in-out;
+// }
+
+// @keyframes animate-shrink {
+//   0% {
+//     transform: scale(0.8);
+//   }
+//   50% {
+//     transform: scale(0.9);
+//   }
+//   60% {
+//     transform: scale(1.05);
+//   }
+//   60% {
+//     transform: scale(1);
+//   }
+// }
+
+// @keyframes animate-grow {
+//   0% {
+//     transform: scale(0.94);
+//   }
+
+//   30% {
+//     transform: scale(0.99);
+//   }
+
+//   100% {
+//     transform: scale(1);
+//   }
+// }

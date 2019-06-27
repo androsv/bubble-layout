@@ -1,0 +1,175 @@
+.select-workload {
+  position: relative;
+}
+
+.main-bubble {
+  position: absolute;
+  display: inline-block;
+  font-size: 2rem;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  top: 5rem;
+  left: 30rem;
+  cursor: pointer;
+  background-color: aquamarine;
+  transition: all 0.5s ease;
+  text-align: center;
+  vertical-align: middle;
+  box-shadow: 0px 5px 15px rgba(183, 206, 196, 0.4);
+  user-select: none;
+  &:focus {
+    outline: 0;
+  }
+  p {
+    margin-top: 6rem;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.side-bubble {
+  font-size: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+  background-color: white;
+  transition: all 0.5s ease;
+  user-select: none;
+  box-shadow: 0px 5px 15px rgba(198, 214, 208, 0.4);
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+  &-2 {
+    top: 10.2rem;
+    left: 24.2rem;
+  }
+  &-3 {
+    top: 16rem;
+    left: 26rem;
+  }
+  &-4 {
+    top: 4.5rem;
+    left: 25.5rem;
+  }
+  &-5 {
+    top: 14.5rem;
+    left: 20.5rem;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+//check animation
+
+.checkmark {
+}
+
+.checkmark::after {
+  opacity: 1;
+  height: 5.5rem;
+  width: 2.25rem;
+  transform-origin: left top;
+  border-right: 0.3rem solid whitesmoke;
+  border-top: 0.3rem solid whitesmoke;
+  content: "";
+  left: 5rem;
+  top: 7rem;
+  position: absolute;
+}
+.checkmark {
+  content: "";
+}
+
+.draw:after {
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-name: checkmark;
+  transform: scaleX(-1) rotate(135deg);
+  animation-delay: 1.5s;
+}
+
+@keyframes checkmark {
+  0% {
+    height: 0;
+    width: 0;
+    opacity: 1;
+  }
+  20% {
+    height: 0;
+    width: 2.25rem;
+    opacity: 1;
+  }
+  40% {
+    height: 5.5rem;
+    width: 2.25rem;
+    opacity: 1;
+  }
+  100% {
+    height: 5.5rem;
+    width: 2.25rem;
+    opacity: 1;
+  }
+}
+
+//check animation
+
+// .do-blue {
+//   background-color: cornflowerblue;
+// }
+
+// .animate-shrink {
+//   animation: animate-shrink 1s ease;
+//   animation-timing-function: ease-in-out;
+// }
+
+// .animate-grow {
+//   animation: animate-grow 1s ease;
+//   animation-timing-function: ease-in-out;
+// }
+
+// @keyframes animate-shrink {
+//   0% {
+//     transform: scale(0.8);
+//   }
+//   50% {
+//     transform: scale(0.9);
+//   }
+//   60% {
+//     transform: scale(1.05);
+//   }
+//   60% {
+//     transform: scale(1);
+//   }
+// }
+
+// @keyframes animate-grow {
+//   0% {
+//     transform: scale(0.94);
+//   }
+
+//   30% {
+//     transform: scale(0.99);
+//   }
+
+//   100% {
+//     transform: scale(1);
+//   }
+// }
